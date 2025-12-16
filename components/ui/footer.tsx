@@ -28,7 +28,8 @@ export default function Footer() {
               </Link>
             </div>
             <div className="text-sm text-slate-300">
-              © c0re.com — All rights reserved.
+              © c0re.com — All rights reserved.{" "}
+              <span className="text-slate-500">(v2)</span>
             </div>
           </div>
         </div>
