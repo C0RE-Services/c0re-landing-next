@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Particles from "./particles";
 import Illustration from "@/public/images/page-illustration.svg";
-import AnimatedBear from "./animated-bear";
 
 export default function HeroAbout() {
   return (
@@ -35,16 +34,6 @@ export default function HeroAbout() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Hero content */}
-
-          {/* Animated Bear with Rings */}
-          <div
-            className="mx-auto relative flex items-center justify-center w-48 h-48 mb-4"
-            data-aos="fade-down"
-            data-aos-delay="600"
-          >
-            <Particles className="absolute inset-0 -z-10" quantity={10} />
-            <AnimatedBear />
-          </div>
 
           <div className="text-center">
             <div className="mb-6" data-aos="fade-down">
@@ -105,6 +94,8 @@ export default function HeroAbout() {
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
                   </svg>

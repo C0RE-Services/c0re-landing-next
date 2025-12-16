@@ -1,4 +1,24 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+function isSafariUserAgent(userAgent: string) {
+  const hasSafari = /Safari/i.test(userAgent);
+  const hasOtherBrowserToken =
+    /(Chrome|Chromium|CriOS|FxiOS|Edg|EdgiOS|OPR)/i.test(userAgent);
+  return hasSafari && !hasOtherBrowserToken;
+}
+
 export default function AnimatedBear() {
+  // Default to hidden to avoid any Safari "flash" before UA detection runs.
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    setShouldRender(!isSafariUserAgent(navigator.userAgent));
+  }, []);
+
+  if (!shouldRender) return null;
+
   return (
     <div className="relative w-48 h-48 flex justify-center items-center">
       {/* Halo effect */}
@@ -8,6 +28,8 @@ export default function AnimatedBear() {
         height="480"
         viewBox="0 0 480 480"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
       >
         <defs>
           <linearGradient id="pulse-a" x1="50%" x2="50%" y1="100%" y2="0%">
@@ -47,6 +69,7 @@ export default function AnimatedBear() {
         suppressHydrationWarning
       >
         <source src="/video/good-bear_alpha.webm" type="video/webm" />
+        <source src="/video/safari-bear.mov" type="video/quicktime" />
         <source
           src="/video/good-bear_alpha_hvc1.mov"
           type="video/quicktime; codecs=hvc1"
