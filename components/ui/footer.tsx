@@ -13,6 +13,15 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-slate-400 mb-3">
               <Link
                 className="hover:text-white transition duration-150 ease-in-out"
+                href="/support"
+              >
+                Support
+              </Link>
+              <span className="text-slate-600" aria-hidden="true">
+                •
+              </span>
+              <Link
+                className="hover:text-white transition duration-150 ease-in-out"
                 href="/privacy-policy"
               >
                 Privacy Policy
