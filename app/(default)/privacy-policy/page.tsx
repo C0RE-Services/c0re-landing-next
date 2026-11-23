@@ -41,6 +41,13 @@ export default function PrivacyPolicyPage() {
                   album, Osca stores the identifiers, job status, and saved results
                   needed to deliver it to your account.
                 </p>
+                <p>
+                  If you enable ListenBrainz scrobbling, Osca sends track details
+                  and play times to the ListenBrainz service you configure. You
+                  can pause scrobbling or remove your credentials in Settings.
+                  ListenBrainz handles the activity it receives under its own
+                  privacy policy.
+                </p>
                 <h3>Friends and contact matching</h3>
                 <p>
                   If you create a Friends profile, your chosen display name and
