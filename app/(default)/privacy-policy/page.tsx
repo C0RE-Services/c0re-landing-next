@@ -21,6 +21,72 @@ export default function PrivacyPolicyPage() {
             </header>
 
             <div className="prose prose-invert prose-slate max-w-none">
+              <section id="osca" className="mb-12 scroll-mt-32 border-b border-slate-800 pb-10">
+                <h2>Osca Privacy Policy</h2>
+                <p>
+                  Osca is a music player with optional account and friend features.
+                  C0RE Services uses the information below to provide those features,
+                  protect accounts, and respond to support and safety requests.
+                </p>
+                <h3>Accounts and music services</h3>
+                <p>
+                  When you sign in, Osca uses Supabase for authentication and account
+                  storage. This includes your account identifier, email address,
+                  and sign-in information from Apple if you choose Sign in with Apple.
+                  If you connect Apple Music or a compatible music server, Osca
+                  accesses the music and playlists you authorize to provide browsing
+                  and playback. Music-server credentials are stored in your device’s
+                  Keychain. If you request account-based processing for a song or
+                  album, Osca stores the identifiers, job status, and saved results
+                  needed to deliver it to your account.
+                </p>
+                <h3>Friends and contact matching</h3>
+                <p>
+                  If you create a Friends profile, your chosen display name and
+                  optional username can be seen by people who find or connect
+                  with you. If you choose Find Friends in Contacts and grant access,
+                  Osca sends hashes of email addresses from your selected contacts
+                  to match verified Osca accounts that opted into discovery.
+                  Contact names stay on your device. You can use username search
+                  without granting Contacts access and turn off discovery in your
+                  listening profile.
+                </p>
+                <h3>Listening activity</h3>
+                <p>
+                  Your private recently played list is stored on your device. If
+                  you enable listening sharing, accepted friends can see the
+                  song and artist, available cover art, and playback timing you
+                  share. Live status expires when it is no longer refreshed.
+                  Shared history is cleaned up after about two days and is
+                  removed when you turn off history sharing. If you separately
+                  turn on online status, other signed-in Osca users can see that
+                  you are online.
+                </p>
+                <h3>Safety, retention, and your choices</h3>
+                <p>
+                  Osca uses friend connections, blocks, and the reports you
+                  submit to provide the Friends feature and respond to abuse.
+                  A report can include the accounts involved, your reason and
+                  optional details, and the profile or shared activity reported.
+                  Reports are private to the support team and ordinarily cleared
+                  within 90 days.
+                </p>
+                <p>
+                  You can change sharing or discovery in your listening profile,
+                  revoke Contacts or Apple Music access in device settings, and
+                  delete your Osca account from Account settings. We keep account
+                  data while you use the service and delete associated information
+                  when you delete your account, except where we need to retain
+                  information for security or legal obligations. We do not sell
+                  personal information.
+                </p>
+                <p>
+                  For privacy questions or data requests, contact{" "}
+                  <a href="mailto:support@c0re.com">support@c0re.com</a>.
+                </p>
+              </section>
+
+              <h2>C0RE Focus Privacy Policy</h2>
               <p>
                 C0RE Focus (“we,” “us,” or “our”) provides an application
                 designed to help users track focus and interact with an
