@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Privacy Policy - c0re",
-  description: "Privacy Policy for C0RE Focus.",
+  description: "Privacy policies for C0RE Focus and Osca.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -14,15 +14,16 @@ export default function PrivacyPolicyPage() {
                 Privacy Policy
               </h1>
               <p className="text-sm text-slate-400">
-                Privacy Policy for C0RE Focus
-                <span className="mx-2 text-slate-600">•</span>
-                Last Updated: December 15, 2025
+                <a href="#c0re-focus" className="underline">C0RE Focus</a>
+                <span className="mx-2 text-slate-600">·</span>
+                <a href="#osca" className="underline">Osca</a>
               </p>
             </header>
 
             <div className="prose prose-invert prose-slate max-w-none">
               <section id="osca" className="mb-12 scroll-mt-32 border-b border-slate-800 pb-10">
                 <h2>Osca Privacy Policy</h2>
+                <p>Last updated November 22, 2026.</p>
                 <p>
                   Osca is a music player with optional account and friend features.
                   C0RE Services uses the information below to provide those features,
@@ -69,7 +70,7 @@ export default function PrivacyPolicyPage() {
                   A report can include the accounts involved, your reason and
                   optional details, and the profile or shared activity reported.
                   Reports are private to the support team and ordinarily cleared
-                  within 90 days.
+                  after 90 days.
                 </p>
                 <p>
                   You can change sharing or discovery in your listening profile,
@@ -86,7 +87,8 @@ export default function PrivacyPolicyPage() {
                 </p>
               </section>
 
-              <h2>C0RE Focus Privacy Policy</h2>
+              <h2 id="c0re-focus" className="scroll-mt-32">C0RE Focus Privacy Policy</h2>
+              <p>Last updated December 15, 2025.</p>
               <p>
                 C0RE Focus (“we,” “us,” or “our”) provides an application
                 designed to help users track focus and interact with an

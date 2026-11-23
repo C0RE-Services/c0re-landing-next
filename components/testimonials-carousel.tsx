@@ -12,9 +12,10 @@ import CarouselImg04 from '@/public/images/carousel-icon-04.svg'
 import CarouselImg05 from '@/public/images/carousel-icon-05.svg'
 
 // Import Swiper
-import Swiper, { Navigation } from 'swiper'
-import 'swiper/swiper.min.css'
-Swiper.use([Navigation])
+import Swiper from 'swiper'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 export default function TestimonialsCarousel() {
 
@@ -22,6 +23,7 @@ export default function TestimonialsCarousel() {
 
   useEffect(() => {
     const carousel = new Swiper('.stellar-carousel', {
+      modules: [Navigation],
       breakpoints: {
         320: {
           slidesPerView: 1
@@ -63,7 +65,7 @@ export default function TestimonialsCarousel() {
           {/* Carousel built with Swiper.js [https://swiperjs.com/] */}
           {/* * Custom styles in src/css/additional-styles/theme.scss */}
           <div className="relative before:absolute before:inset-0 before:-translate-x-full before:z-20 before:bg-linear-to-l before:from-transparent before:to-slate-900 before:to-20% after:absolute after:inset-0 after:translate-x-full after:z-20 after:bg-linear-to-r after:from-transparent after:to-slate-900 after:to-20%">
-            <div className="stellar-carousel swiper-container group">
+            <div className="stellar-carousel swiper group">
               <Highlighter className="swiper-wrapper w-fit" refresh={swiperInitialized}>
                 {/* Carousel items */}
                 <HighlighterItem className="swiper-slide h-auto group/slide">

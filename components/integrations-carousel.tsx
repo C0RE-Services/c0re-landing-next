@@ -30,9 +30,10 @@ import Avatar18 from '@/public/images/avatar-18.jpg'
 import Avatar19 from '@/public/images/avatar-19.jpg'
 
 // Import Swiper
-import Swiper, { Navigation } from 'swiper'
-import 'swiper/swiper.min.css'
-Swiper.use([Navigation])
+import Swiper from 'swiper'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 export default function IntegrationsCarousel() {
 
@@ -40,6 +41,7 @@ export default function IntegrationsCarousel() {
 
   useEffect(() => {
     const carousel = new Swiper('.stellar-carousel', {
+      modules: [Navigation],
       breakpoints: {
         320: {
           slidesPerView: 1
@@ -66,7 +68,7 @@ export default function IntegrationsCarousel() {
 
   return (
     <>
-      <div className="stellar-carousel swiper-container group">
+      <div className="stellar-carousel swiper group">
         <div className="swiper-wrapper w-fit">
           {/* Carousel items */}
           <div className="swiper-slide h-auto bg-linear-to-tr from-slate-800 to-slate-800/25 rounded-3xl border border-slate-800 hover:border-slate-700/60 transition-colors group relative">

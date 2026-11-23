@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Support - c0re",
-  description: "Support and help for the C0RE Focus app.",
+  description: "Support for C0RE Focus and Osca.",
 };
 
 export default function SupportPage() {
@@ -14,12 +14,27 @@ export default function SupportPage() {
                 Support
               </h1>
               <p className="text-lg text-slate-400">
-                Help, troubleshooting, and how to reach us for C0RE Focus.
+                Help and troubleshooting for C0RE Focus and Osca.
               </p>
             </header>
 
             <div className="prose prose-invert prose-slate max-w-none">
-              <h2>Contact</h2>
+              <section id="osca" className="mb-12 scroll-mt-32 border-b border-slate-800 pb-10">
+                <h2>Osca Support</h2>
+                <p>
+                  Email <a href="mailto:support@c0re.com?subject=Osca%20Support">support@c0re.com</a>{" "}
+                  for help with Osca. Include your iOS and Osca versions and a short
+                  description of what happened.
+                </p>
+                <p>
+                  To report or block someone, open their safety menu in Friends.
+                  Include the report reference if you follow up by email. To delete
+                  your account, open Account settings in Osca.
+                </p>
+                <p><a href="/privacy-policy#osca">Osca Privacy Policy</a></p>
+              </section>
+
+              <h2>C0RE Focus Support</h2>
               <p>
                 For support requests, bug reports, billing questions, and
                 account deletion requests, email{" "}
