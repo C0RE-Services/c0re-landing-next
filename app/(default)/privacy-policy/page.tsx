@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             <div className="prose prose-invert prose-slate max-w-none">
               <section id="osca" className="mb-12 scroll-mt-32 border-b border-slate-800 pb-10">
                 <h2>Osca Privacy Policy</h2>
-                <p>Last updated November 22, 2026.</p>
+                <p>Last updated November 26, 2026.</p>
                 <p>
                   Osca is a music player with optional account and friend features.
                   C0RE Services uses the information below to provide those features,
@@ -53,11 +53,20 @@ export default function PrivacyPolicyPage() {
                   If you create a Friends profile, your chosen display name and
                   optional username can be seen by people who find or connect
                   with you. If you choose Find Friends in Contacts and grant access,
-                  Osca sends hashes of email addresses from your selected contacts
-                  to match verified Osca accounts that opted into discovery.
-                  Contact names stay on your device. You can use username search
-                  without granting Contacts access and turn off discovery in your
-                  listening profile.
+                  Osca sends hashes of phone numbers and email addresses from
+                  your selected contacts to look for accounts that opted into
+                  discovery. We use these contact hashes to answer the lookup.
+                  Contact names stay on your device, and you can search by
+                  username without granting Contacts access.
+                </p>
+                <p>
+                  If you choose Find Me by Phone, Osca sends the number you enter
+                  to Twilio Verify to deliver and check a one-time code. Twilio
+                  processes the number and delivery information under its own
+                  privacy notice. After verification, Osca stores a keyed hash
+                  of the number for discovery. Your number is never shown on
+                  your profile. You can remove it from Find Me by Phone or by
+                  deleting your Osca account.
                 </p>
                 <h3>Listening activity</h3>
                 <p>
